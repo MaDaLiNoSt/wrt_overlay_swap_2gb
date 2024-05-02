@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -e
 dd if=/dev/zero of=/overlay/swapfile bs=1M count=2048
 chmod 600 /overlay/swapfile
 mkswap /overlay/swapfile
